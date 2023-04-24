@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    #pic {
+
+        height: 90px;
+        width: 65px;
+        background-position: -40px -44px;
+        background-image: url("https://static.runoob.com/images/mix/space-to-top.png");
+        animation: .6s go steps(7) infinite;
+    }
+
+    @keyframes go {
+        0% {
+            background-position-x: -40px;
+        }
+
+        100% {
+            background-position-x: -1040px;
+        }
+    }
+
+</style>
+
+<body>
+    <div id="pic"></div>
+</body>
+</html>
